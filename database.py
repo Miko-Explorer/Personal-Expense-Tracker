@@ -47,5 +47,3 @@ def run_query(query, params=None, fetch=True):
     finally:
         if cursor:
             cursor.close()
-        # Do NOT close the connection here – we want to reuse it.
-        # Streamlit will close it when the session ends.
