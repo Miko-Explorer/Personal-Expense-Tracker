@@ -3,7 +3,6 @@ import mysql.connector
 import streamlit as st
 import pandas as pd
 
-@st.cache_resource
 def get_db_connection():
     """Return a MySQL connection, reconnecting if necessary."""
     try:
