@@ -1,4 +1,3 @@
-# main.py
 import streamlit as st
 from users import show_users
 from expenses import show_expenses
