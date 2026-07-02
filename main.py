@@ -133,7 +133,6 @@ st.markdown("""
 
 # ---- Sidebar ----
 with st.sidebar:
-    # Optional: extra style inside sidebar for extra reliability
     st.markdown("""
         <style>
             section[data-testid="stSidebar"] {
