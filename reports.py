@@ -42,7 +42,6 @@ def show_reports():
             for view_name in group:
                 st.subheader(views[view_name])
 
-                # Build query: if view has user_id, join with users to get username
                 if view_name in views_with_user_id:
                     # Get column names from the view to avoid ambiguous columns
                     # We'll select all columns from the view and add username
