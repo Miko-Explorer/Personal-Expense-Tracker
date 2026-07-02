@@ -43,8 +43,6 @@ def show_reports():
                 st.subheader(views[view_name])
 
                 if view_name in views_with_user_id:
-                    # Get column names from the view to avoid ambiguous columns
-                    # We'll select all columns from the view and add username
                     query = f"""
                         SELECT v.*, u.username
                         FROM {view_name} v
