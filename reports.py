@@ -21,7 +21,6 @@ def show_reports():
         "total_entries": "Total Number of Expense Entries"
     }
 
-    # Views that contain user_id – we will join with users to show username
     views_with_user_id = {
         "high_expense_based_cat",
         "low_expense_based_cat",
