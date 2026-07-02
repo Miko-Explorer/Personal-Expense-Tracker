@@ -1,4 +1,3 @@
-# expenses.py
 import streamlit as st
 import pandas as pd
 from database import run_query
