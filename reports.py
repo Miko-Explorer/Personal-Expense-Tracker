@@ -1,4 +1,3 @@
-# reports.py
 import streamlit as st
 from database import run_query
 
