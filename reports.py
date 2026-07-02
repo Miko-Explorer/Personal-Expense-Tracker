@@ -54,8 +54,6 @@ def show_reports():
 
                 df = run_query(query)
                 if df is not None and not df.empty:
-                    # If the view had user_id and we joined, we might want to reorder columns
-                    # to show username first. We'll just display as is.
                     st.dataframe(df, use_container_width=True, hide_index=True)
                 else:
                     st.info("No data available for this report.")
