@@ -3,7 +3,6 @@ import streamlit as st
 import pandas as pd
 
 def get_db_connection():
-    """Return a MySQL connection, reconnecting if necessary."""
     try:
         conn = mysql.connector.connect(
             host=st.secrets["mysql"]["host"],
