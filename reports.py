@@ -4,7 +4,6 @@ from database import run_query
 def show_reports():
     st.header("Expense Reports")
 
-    # Define views and their display names (now with per-user context)
     views = {
         "high_expense_based_cat": "Highest Amount Spent per Category (by User)",
         "low_expense_based_cat": "Lowest Amount Spent per Category (by User)",
