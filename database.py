@@ -27,7 +27,6 @@ def get_db_connection():
 def run_query(query, params=None, fetch=True):
     conn = get_db_connection()
     if conn is None:
-        # Clear message for the user
         st.warning("Cannot connect to database. Please check your settings and try again.")
         return None if fetch else 0
 
