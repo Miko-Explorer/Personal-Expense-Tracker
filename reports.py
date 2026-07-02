@@ -1,11 +1,9 @@
-# reports.py
 import streamlit as st
 from database import run_query
 
 def show_reports():
     st.header("Expense Reports")
 
-    # Define views and their display names (now with per-user context)
     views = {
         "high_expense_based_cat": "Highest Amount Spent per Category (by User)",
         "low_expense_based_cat": "Lowest Amount Spent per Category (by User)",
@@ -23,7 +21,6 @@ def show_reports():
         "total_entries": "Total Number of Expense Entries"
     }
 
-    # Views that contain user_id – we will join with users to show username
     views_with_user_id = {
         "high_expense_based_cat",
         "low_expense_based_cat",
@@ -36,7 +33,6 @@ def show_reports():
         "total_amount_spent_based_cat",
     }
 
-    # Group views into tabs
     view_names = list(views.keys())
     tab_groups = [view_names[i:i + 4] for i in range(0, len(view_names), 4)]
     tabs = st.tabs([f"Reports {i + 1}" for i in range(len(tab_groups))])
@@ -46,10 +42,7 @@ def show_reports():
             for view_name in group:
                 st.subheader(views[view_name])
 
-                # Build query: if view has user_id, join with users to get username
                 if view_name in views_with_user_id:
-                    # Get column names from the view to avoid ambiguous columns
-                    # We'll select all columns from the view and add username
                     query = f"""
                         SELECT v.*, u.username
                         FROM {view_name} v
@@ -61,8 +54,6 @@ def show_reports():
 
                 df = run_query(query)
                 if df is not None and not df.empty:
-                    # If the view had user_id and we joined, we might want to reorder columns
-                    # to show username first. We'll just display as is.
                     st.dataframe(df, use_container_width=True, hide_index=True)
                 else:
                     st.info("No data available for this report.")
