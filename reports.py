@@ -33,7 +33,6 @@ def show_reports():
         "total_amount_spent_based_cat",
     }
 
-    # Group views into tabs
     view_names = list(views.keys())
     tab_groups = [view_names[i:i + 4] for i in range(0, len(view_names), 4)]
     tabs = st.tabs([f"Reports {i + 1}" for i in range(len(tab_groups))])
