@@ -1,4 +1,3 @@
-# database.py
 import mysql.connector
 import streamlit as st
 import pandas as pd
