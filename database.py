@@ -11,7 +11,6 @@ def get_db_connection():
             database=st.secrets["mysql"]["database"],
             port=st.secrets["mysql"].get("port", 3306)
         )
-        # Check if connection is alive
         if conn.is_connected():
             return conn
         else:
