@@ -127,16 +127,11 @@ Personal Expense Tracker/
 
 SQL scripts are located in the `Database & ERD/` directory. Run them against your MySQL server in this order:
 
-1. **Create database and tables:**
-
-   ```bash
-   mysql -u your_user -p < "Database & ERD/personal_expense_tracker (updated).sql"
-   ```
-
-   This script:
-   - Creates the `expense_db` database (if it does not exist).
-   - Creates the `users` table.
-   - Creates the `expenses` table with a foreign key referencing `users(id)` and `ON DELETE CASCADE`.
+  1. **Create database and tables:**
+     ```bash
+     mysql -u your_user -p < "Database & ERD/personal_expense_tracker (updated).sql"
+     ```
+     Creates `expense_db`, `users`, and `expenses` (with FK → `users(id)` + `ON DELETE CASCADE`).
 
   2. **Create reporting views:**
      ```bash
