@@ -144,9 +144,7 @@ SQL scripts are located in the `Database & ERD/` directory. Run them against you
    mysql -u your_user -p expense_db < "Database & ERD/expense_tracker_report (updated).sql"
    ```
 
-   This creates the 14 views that `reports.py` queries.
-
-Alternatively, open each file in MySQL Workbench or your preferred SQL client and execute the statements sequentially.
+- Alternatively, execute the SQL files in MySQL Workbench or any MySQL client.
 
 ---
 
