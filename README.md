@@ -54,8 +54,6 @@ See `requirements.txt` for exact dependency pins.
 ```
 Personal Expense Tracker/
 ├─ .gitignore
-├─ requirements.txt
-├─ README.md
 ├─ .streamlit/
 │  └─ secrets.toml
 ├─ Data Dictionary/
