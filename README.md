@@ -245,7 +245,8 @@ Views marked with `user_id` are queried with a `LEFT JOIN` on `users` so the `us
 
 ## Contributing
 
-Fork the repo, create a feature branch (`feat/your-feature`), make changes, and open a PR. Avoid committing secrets or large binaries.
+- Fork the repo, create a feature branch (`feat/your-feature`), make changes, and open a PR.
+- Avoid committing secrets or large binaries.
 
 ---
 
