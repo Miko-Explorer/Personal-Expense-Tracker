@@ -183,7 +183,7 @@ Alternatively, open each file in MySQL Workbench or your preferred SQL client an
 
 ## SQL views (reporting)
 
-The `expense_tracker_report (updated).sql` script creates the following 14 views, all of which are consumed by `reports.py`:
+`expense_tracker_report (updated).sql` creates 14 views:
 
 | View name | Display name | `user_id` |
 |---|---|---|
