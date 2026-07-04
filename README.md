@@ -109,9 +109,7 @@ Personal Expense Tracker/
    port = 3306
    ```
 
-   > **Important:** `.streamlit/secrets.toml` is listed in `.gitignore` and must never be committed to version control.
-
-4. **Set up the database** — run the SQL scripts in order (see [Database setup](#database-setup)).
+- **Run database scripts** (see [Database setup](#database-setup)).
 
 - **Launch the app:**
   ```bash
