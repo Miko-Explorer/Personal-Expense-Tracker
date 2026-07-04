@@ -185,22 +185,22 @@ Alternatively, open each file in MySQL Workbench or your preferred SQL client an
 
 The `expense_tracker_report (updated).sql` script creates the following 14 views, all of which are consumed by `reports.py`:
 
-| View name                              | Display name                                    | Has `user_id` |
-|----------------------------------------|-------------------------------------------------|:-------------:|
-| `high_expense_based_cat`               | Highest Amount Spent per Category (by User)     | Yes           |
-| `low_expense_based_cat`                | Lowest Amount Spent per Category (by User)      | Yes           |
-| `high_amount_paid_based_paymethod`     | Highest Amount Paid per Payment Method (by User)| Yes           |
-| `low_amount_paid_based_paymethod`      | Lowest Amount Paid per Payment Method (by User) | Yes           |
-| `latest_created_expense`               | 10 Most Recent Expenses (created_at)            | No            |
-| `outdated_created_expense`             | 30 Oldest Expenses (created_at)                 | No            |
-| `recently_updated_expense`             | Most Recently Updated Expenses                  | No            |
-| `not_updated_expense`                  | Expenses Never Updated (oldest first)           | No            |
-| `total_amount_spent`                   | Total Amount Spent (by User)                    | Yes           |
-| `average_amount_spent_based_cat`       | Average Amount Spent per Category (by User)     | Yes           |
-| `average_amount_spent_based_paymethod` | Average Amount Paid per Payment Method (by User)| Yes           |
-| `total_amount_paid_based_paymethod`    | Total Amount Paid per Payment Method (by User)  | Yes           |
-| `total_amount_spent_based_cat`         | Total Amount Spent per Category (by User)       | Yes           |
-| `total_entries`                        | Total Number of Expense Entries                 | No            |
+| View name | Display name | `user_id` |
+|---|---|---|
+| `high_expense_based_cat` | Highest Amount Spent per Category (by User) | Yes |
+| `low_expense_based_cat` | Lowest Amount Spent per Category (by User) | Yes |
+| `high_amount_paid_based_paymethod` | Highest Amount Paid per Payment Method (by User) | Yes |
+| `low_amount_paid_based_paymethod` | Lowest Amount Paid per Payment Method (by User) | Yes |
+| `latest_created_expense` | 10 Most Recent Expenses | No |
+| `outdated_created_expense` | 30 Oldest Expenses | No |
+| `recently_updated_expense` | Most Recently Updated Expenses | No |
+| `not_updated_expense` | Expenses Never Updated (oldest first) | No |
+| `total_amount_spent` | Total Amount Spent (by User) | Yes |
+| `average_amount_spent_based_cat` | Average Amount Spent per Category (by User) | Yes |
+| `average_amount_spent_based_paymethod` | Average Amount Paid per Payment Method (by User) | Yes |
+| `total_amount_paid_based_paymethod` | Total Amount Paid per Payment Method (by User) | Yes |
+| `total_amount_spent_based_cat` | Total Amount Spent per Category (by User) | Yes |
+| `total_entries` | Total Number of Expense Entries | No |
 
 - Views with `user_id` are `LEFT JOIN`ed with `users` to show `username`.
 - Empty results display "No data available for this report."
