@@ -61,17 +61,17 @@ Personal Expense Tracker/
 │  ├─ Data Dictionary (PDF ver.).pdf
 │  └─ Data Dictionary (Sheet ver.).xlsx
 ├─ Database & ERD/
-│  ├─ ERD_expense_db.mwb
-│  ├─ ERD_expense_db.pdf
-│  ├─ expense_tracker_report (updated).sql
-│  └─ personal_expense_tracker (updated).sql
-├─ database.py
-├─ expenses.py
-├─ main.py
-├─ README.md
-├─ reports.py
-├─ requirements.txt
-└─ users.py
+│  ├─ ERD_expense_db.mwb           # MySQL Workbench model
+│  ├─ ERD_expense_db.pdf           # ERD diagram (PDF)
+│  ├─ expense_tracker_report (updated).sql  # 14 reporting views
+│  └─ personal_expense_tracker (updated).sql # DB + tables DDL
+├─ database.py                     # Cached DB connection + run_query()
+├─ expenses.py                     # Expense CRUD
+├─ main.py                         # App entry, CSS theme, routing
+├─ README.md                       # This file
+├─ reports.py                      # Report viewer (14 SQL views)
+├─ requirements.txt                # Python dependencies
+└─ users.py                        # User CRUD
 ```
 
 ---
