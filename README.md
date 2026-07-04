@@ -209,12 +209,12 @@ Views marked with `user_id` are queried with a `LEFT JOIN` on `users` so the `us
 ## Application modules
 
 | Module | File | Role |
-|--------|------|------|
-| **Entry point** | `main.py` | Sets page config, injects dark glassmorphism CSS (animated gradient, frosted containers, styled inputs), renders sidebar with logo and radio navigation, routes to Users/Expenses/Reports pages. |
-| **Database layer** | `database.py` | `get_db_connection()` — cached connection reading from `secrets.toml`. `run_query(query, params, fetch)` — parameterized executor returning a DataFrame (fetch) or affected row count (no fetch). |
-| **User management** | `users.py` | `show_users()` — displays user table, add/edit/delete with confirmation checkbox. Edits only changed fields via dynamic UPDATE; cascading delete removes expenses. |
-| **Expense management** | `expenses.py` | `show_expenses()` — filters expenses by user, add/edit/delete with full form (category, amount, date, payment method, location, description). Guards against empty user table. |
-| **Report viewer** | `reports.py` | `show_reports()` — queries 14 SQL views, groups them into 4-per-tab layout. Views with `user_id` are LEFT JOINed with `users` to show usernames. Empty results show "No data available." |
+|---|---|---|
+| **Entry point** | `main.py` | Page config, glassmorphism CSS, sidebar logo + radio nav, page routing |
+| **Database layer** | `database.py` | `get_db_connection()` (cached) + `run_query()` — parameterized executor returning DataFrame or row count |
+| **User management** | `users.py` | `show_users()` — display table, add/edit/delete with confirmation; dynamic UPDATE for changed fields; cascading delete |
+| **Expense management** | `expenses.py` | `show_expenses()` — filter by user, full CRUD form (category, amount, date, payment method, location, description); guards empty user table |
+| **Report viewer** | `reports.py` | `show_reports()` — queries 14 views in 4-per-tab layout; joins `users` on `user_id` views |
 
 ---
 
