@@ -138,11 +138,11 @@ SQL scripts are located in the `Database & ERD/` directory. Run them against you
    - Creates the `users` table.
    - Creates the `expenses` table with a foreign key referencing `users(id)` and `ON DELETE CASCADE`.
 
-2. **Create reporting views:**
-
-   ```bash
-   mysql -u your_user -p expense_db < "Database & ERD/expense_tracker_report (updated).sql"
-   ```
+  2. **Create reporting views:**
+     ```bash
+     mysql -u your_user -p expense_db < "Database & ERD/expense_tracker_report (updated).sql"
+     ```
+     Creates 14 views consumed by `reports.py`.
 
 - Alternatively, execute the SQL files in MySQL Workbench or any MySQL client.
 
