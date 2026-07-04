@@ -218,7 +218,7 @@ Views marked with `user_id` are queried with a `LEFT JOIN` on `users` so the `us
 
 ---
 
-## UI / UX details
+## UI / UX
 
 - **Dark glassmorphism theme** — animated gradient background, frosted containers (`backdrop-filter: blur(8px)`), rounded inputs, subtle borders
 - **Sidebar** — `#1E1E24` backdrop, centered "PET" logo with glow, hidden-label radio nav (Users / Expenses / Reports)
