@@ -45,7 +45,7 @@ Personal Expense Tracker (PET) is a lightweight Streamlit application backed by 
 | Database server    | MySQL (8.0+ recommended)  |
 | UI / styling       | Custom CSS (glassmorphism) |
 
-See `requirements.txt` for exact dependency pins.
+See `requirements.txt` for pinned versions.
 
 ---
 
