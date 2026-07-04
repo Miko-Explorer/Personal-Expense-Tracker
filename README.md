@@ -56,7 +56,7 @@ See `requirements.txt` for pinned versions.
 Personal Expense Tracker/
 ├─ .gitignore
 ├─ .streamlit/
-│  └─ secrets.toml
+│  └─ secrets.toml                 # MySQL credentials (git-ignored)
 ├─ Data Dictionary/
 │  ├─ Data Dictionary (PDF ver.).pdf   # Schema reference (PDF)
 │  └─ Data Dictionary (Sheet ver.).xlsx # Schema reference (Excel)
