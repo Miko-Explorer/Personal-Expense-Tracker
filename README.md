@@ -220,9 +220,9 @@ Views marked with `user_id` are queried with a `LEFT JOIN` on `users` so the `us
 
 ## UI / UX details
 
-- **Dark glassmorphism theme** — animated gradient background, frosted-glass containers (`backdrop-filter: blur(8px)`, `border-radius: 20px`), semi-transparent form inputs, and subtle borders.
-- **Sidebar** — dark `#1E1E24` backdrop, centered "PET" logo with glow shadow, hidden-label radio navigation (Users / Expenses / Reports).
-- **Interactions** — buttons glow blue on hover; data tables render with a transparent background; mutation actions trigger `st.rerun()` for instant UI refresh.
+- **Dark glassmorphism theme** — animated gradient background, frosted containers (`backdrop-filter: blur(8px)`), rounded inputs, subtle borders
+- **Sidebar** — `#1E1E24` backdrop, centered "PET" logo with glow, hidden-label radio nav (Users / Expenses / Reports)
+- **Interactions** — blue glow on button hover, transparent data tables, `st.rerun()` on mutations for instant refresh
 
 ---
 
