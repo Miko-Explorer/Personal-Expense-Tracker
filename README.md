@@ -71,6 +71,7 @@ Personal Expense Tracker/
 ├─ main.py
 ├─ README.md
 ├─ reports.py
+├─ requirements.txt
 └─ users.py
 ```
 
