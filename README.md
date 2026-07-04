@@ -25,12 +25,12 @@ Personal Expense Tracker (PET) is a lightweight Streamlit application backed by 
 
 ## Features
 
-- **User management** — create, edit, and delete user accounts with username, email, and password.
-- **Expense tracking** — add, edit, and delete expenses with amount, category, date, payment method, description, and location. Filter expenses by user.
-- **Pre-built reporting views** — 14 SQL views providing aggregate and time-based analytics (highest/lowest by category, totals, averages, recent entries, etc.). Reports that contain a `user_id` are joined with the `users` table to display usernames.
-- **Dark glassmorphism UI** — custom CSS with animated gradient background, frosted-glass containers, sidebar branding, and hover effects.
-- **MySQL-backed storage** — all data persisted in MySQL with pandas integration for seamless DataFrame display.
-- **Cached database connection** — `@st.cache_resource` ensures a single connection is reused across the session.
+- **User management** — create, edit, delete users (username, email, password)
+- **Expense tracking** — add, edit, delete expenses (amount, category, date, payment method, description, location); filter by user
+- **14 pre-built SQL views** — aggregate and time-based reports (highest/lowest by category, totals, averages, recent entries); `user_id` views join with `users` to show usernames
+- **Dark glassmorphism UI** — animated gradient background, frosted-glass containers, styled inputs
+- **MySQL + pandas** — parameterized queries, results returned as DataFrames
+- **Cached connection** — `@st.cache_resource` reuses a single DB connection per session
 
 ---
 
