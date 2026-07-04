@@ -202,7 +202,8 @@ The `expense_tracker_report (updated).sql` script creates the following 14 views
 | `total_amount_spent_based_cat`         | Total Amount Spent per Category (by User)       | Yes           |
 | `total_entries`                        | Total Number of Expense Entries                 | No            |
 
-Views marked with `user_id` are queried with a `LEFT JOIN` on `users` so the `username` appears alongside the data. Empty results display "No data available for this report."
+- Views with `user_id` are `LEFT JOIN`ed with `users` to show `username`.
+- Empty results display "No data available for this report."
 
 ---
 
