@@ -166,18 +166,18 @@ Alternatively, open each file in MySQL Workbench or your preferred SQL client an
 
 #### `expenses` table
 
-| Column          | Type              | Constraints                        |
-|-----------------|-------------------|------------------------------------|
-| `id`            | `INT`             | `PRIMARY KEY`, `AUTO_INCREMENT`    |
-| `user_id`       | `INT`             | `NOT NULL`, `FOREIGN KEY → users(id) ON DELETE CASCADE` |
-| `amount_spent`  | `DECIMAL(12,2)`   | `NOT NULL`                         |
-| `category`      | `ENUM('Food','Transport','Utilities','Subscription','Health','Work','School','Entertainment','Insurance','Miscellaneous')` | |
-| `description`   | `VARCHAR(500)`    |                                    |
-| `dates`         | `DATE`            | `NOT NULL`                         |
-| `payment_method`| `ENUM('Debit','Credit','Cash','Online Payment')` | |
-| `location`      | `VARCHAR(255)`    |                                    |
-| `created_at`    | `TIMESTAMP`       | `DEFAULT CURRENT_TIMESTAMP`        |
-| `updated_at`    | `TIMESTAMP`       | `NULL` on insert, `ON UPDATE CURRENT_TIMESTAMP` |
+| Column | Type | Constraints |
+|---|---|---|
+| `id` | `INT` | `PRIMARY KEY`, `AUTO_INCREMENT` |
+| `user_id` | `INT` | `NOT NULL`, `FK → users(id) ON DELETE CASCADE` |
+| `amount_spent` | `DECIMAL(12,2)` | `NOT NULL` |
+| `category` | `ENUM('Food','Transport','Utilities','Subscription','Health','Work','School','Entertainment','Insurance','Miscellaneous')` | |
+| `description` | `VARCHAR(500)` | |
+| `dates` | `DATE` | `NOT NULL` |
+| `payment_method` | `ENUM('Debit','Credit','Cash','Online Payment')` | |
+| `location` | `VARCHAR(255)` | |
+| `created_at` | `TIMESTAMP` | `DEFAULT CURRENT_TIMESTAMP` |
+| `updated_at` | `TIMESTAMP` | `ON UPDATE CURRENT_TIMESTAMP` |
 
 ---
 
