@@ -77,12 +77,11 @@ Personal Expense Tracker/
 
 ## Quick start
 
-1. **Clone the repository** and navigate to the tracker folder:
-
-   ```bash
-   git clone https://github.com/Miko-Explorer/MySQL-Based-Projects.git
-   cd "MySQL-Based-Projects/Personal Expenses Tracker"
-   ```
+- **Clone the repo:**
+  ```bash
+  git clone https://github.com/Miko-Explorer/MySQL-Based-Projects.git
+  cd "MySQL-Based-Projects/Personal Expenses Tracker"
+  ```
 
 - **Set up a virtual environment and install deps:**
   ```bash
