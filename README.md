@@ -164,7 +164,7 @@ Alternatively, open each file in MySQL Workbench or your preferred SQL client an
 | `passwords`| `VARCHAR(255)`    | `NOT NULL`                         |
 | `created_at`| `TIMESTAMP`      | `DEFAULT CURRENT_TIMESTAMP`        |
 
-#### `expenses` table
+### `expenses` table
 
 | Column | Type | Constraints |
 |---|---|---|
