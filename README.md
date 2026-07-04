@@ -203,7 +203,7 @@ Personal Expense Tracker/
 
 ## UI / UX
 
-- **Dark glassmorphism theme** — animated gradient background, frosted containers (`backdrop-filter: blur(8px)`), rounded inputs, subtle borders
+- **Dark glassmorphism theme** — animated gradient background, frosted containers, rounded inputs, subtle borders
 - **Sidebar** — `#1E1E24` backdrop, centered "PET" logo with glow, hidden-label radio nav (Users / Expenses / Reports)
 - **Interactions** — blue glow on button hover, transparent data tables, `st.rerun()` on mutations for instant refresh
 
