@@ -28,7 +28,8 @@
 
 - **User management** — create, edit, delete users (username, email, password)
 - **Expense tracking** — add, edit, delete expenses (amount, category, date, payment method, description, location); filter by user
-- **14 pre-built SQL views** — aggregate and time-based reports (highest/lowest by category, totals, averages, recent entries); `user_id` views join with `users` to show usernames
+- **14 pre-built SQL views** — aggregate and time-based reports
+  - (highest/lowest by category, totals, averages, recent entries); `user_id` views join with `users` to show usernames
 - **Dark glassmorphism UI** — animated gradient background, frosted-glass containers, styled inputs
 - **MySQL + pandas** — parameterized queries, results returned as DataFrames
 - **Cached connection** — `@st.cache_resource` reuses a single DB connection per session
