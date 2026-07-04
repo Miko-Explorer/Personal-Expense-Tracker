@@ -113,13 +113,11 @@ Personal Expense Tracker/
 
 4. **Set up the database** — run the SQL scripts in order (see [Database setup](#database-setup)).
 
-5. **Launch the app**:
-
-   ```bash
-   streamlit run main.py
-   ```
-
-   Open the URL shown in the terminal (typically `http://localhost:8501`).
+- **Launch the app:**
+  ```bash
+  streamlit run main.py
+  ```
+  Open `http://localhost:8501`.
 
 ---
 
