@@ -69,6 +69,7 @@ Personal Expense Tracker/
 ├─ database.py
 ├─ expenses.py
 ├─ main.py
+├─ README.md
 ├─ reports.py
 └─ users.py
 ```
