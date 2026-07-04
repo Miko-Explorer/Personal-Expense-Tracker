@@ -54,7 +54,7 @@ See `requirements.txt` for pinned versions.
 
 ```
 Personal Expense Tracker/
-├─ .gitignore
+├─ .gitignore                      # Ignores secrets, cache, venvs, IDE files
 ├─ .streamlit/
 │  └─ secrets.toml                 # MySQL credentials (git-ignored)
 ├─ Data Dictionary/
