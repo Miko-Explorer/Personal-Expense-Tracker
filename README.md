@@ -84,17 +84,13 @@ Personal Expense Tracker/
    cd "MySQL-Based-Projects/Personal Expenses Tracker"
    ```
 
-2. **Create and activate a virtual environment**, then install dependencies:
-
-   ```bash
-   python -m venv .venv
-   # macOS / Linux
-   source .venv/bin/activate
-   # Windows
-   .venv\Scripts\activate
-
-   pip install -r requirements.txt
-   ```
+- **Set up a virtual environment and install deps:**
+  ```bash
+  python -m venv .venv
+  source .venv/bin/activate        # Linux/macOS
+  .venv\Scripts\activate           # Windows
+  pip install -r requirements.txt
+  ```
 
 - **Configure `.streamlit/secrets.toml`** with MySQL credentials:
   ```toml
