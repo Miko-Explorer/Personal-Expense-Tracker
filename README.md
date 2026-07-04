@@ -96,18 +96,16 @@ Personal Expense Tracker/
    pip install -r requirements.txt
    ```
 
-3. **Configure Streamlit secrets**:
-
-   Create (or edit) `.streamlit/secrets.toml` with your MySQL credentials:
-
-   ```toml
-   [mysql]
-   host = "localhost"
-   user = "your_db_user"
-   password = "your_db_password"
-   database = "expense_db"
-   port = 3306
-   ```
+- **Configure `.streamlit/secrets.toml`** with MySQL credentials:
+  ```toml
+  [mysql]
+  host = "localhost"
+  user = "your_user"
+  password = "your_password"
+  database = "expense_db"
+  port = 3306
+  ```
+  > Never commit this file — it's in `.gitignore`.
 
 - **Run database scripts** (see [Database setup](#database-setup)).
 
