@@ -58,8 +58,8 @@ Personal Expense Tracker/
 ├─ .streamlit/
 │  └─ secrets.toml
 ├─ Data Dictionary/
-│  ├─ Data Dictionary (PDF ver.).pdf
-│  └─ Data Dictionary (Sheet ver.).xlsx
+│  ├─ Data Dictionary (PDF ver.).pdf   # Schema reference (PDF)
+│  └─ Data Dictionary (Sheet ver.).xlsx # Schema reference (Excel)
 ├─ Database & ERD/
 │  ├─ ERD_expense_db.mwb           # MySQL Workbench model
 │  ├─ ERD_expense_db.pdf           # ERD diagram (PDF)
