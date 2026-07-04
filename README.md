@@ -152,9 +152,7 @@ Alternatively, open each file in MySQL Workbench or your preferred SQL client an
 
 ## Database schema
 
-### `expense_db` database
-
-#### `users` table
+### `users` table
 
 | Column | Type | Constraints |
 |---|---|---|
