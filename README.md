@@ -228,10 +228,10 @@ Views marked with `user_id` are queried with a `LEFT JOIN` on `users` so the `us
 
 ## Security notes & recommended improvements
 
-- **Plain-text passwords** — the `passwords` column stores cleartext. Before deploying, hash with bcrypt/Argon2.
-- **Secrets** — `.streamlit/secrets.toml` is git-ignored. For production, use environment variables or a secrets manager.
-- **SQL injection** — mitigated via parameterized queries (keep this pattern).
-- **Enhancements** — add input validation, rate limiting, TLS/SSL for DB and deployment.
+- **Plain-text passwords** — `passwords` column stores cleartext. Hash with bcrypt/Argon2 before deploying.
+- **Secrets** — `.streamlit/secrets.toml` is git-ignored. Use env vars or a secrets manager in production.
+- **SQL injection** — prevented by parameterized queries (maintain this pattern).
+- **Recommended** — input validation, rate limiting, TLS/SSL for DB and deployment.
 
 ---
 
