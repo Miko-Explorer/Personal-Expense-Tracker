@@ -125,7 +125,8 @@ Personal Expense Tracker/
 
 ## Database setup
 
-SQL scripts are located in the `Database & ERD/` directory. Run them against your MySQL server in this order:
+- Scripts live in `Database & ERD/`.
+- **Run in order:**
 
   1. **Create database and tables:**
      ```bash
