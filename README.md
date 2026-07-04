@@ -36,14 +36,14 @@ Personal Expense Tracker (PET) is a lightweight Streamlit application backed by 
 
 ## Tech stack
 
-| Component          | Technology                |
-|--------------------|---------------------------|
-| Language           | Python 3.10+              |
-| Web framework      | Streamlit 1.31.1          |
-| Data manipulation  | pandas 2.2.0              |
-| Database connector | mysql-connector-python 8.2.0 |
-| Database server    | MySQL (8.0+ recommended)  |
-| UI / styling       | Custom CSS (glassmorphism) |
+| Component | Technology |
+|---|---|
+| Language | Python 3.10+ |
+| Web framework | Streamlit 1.31.1 |
+| Data manipulation | pandas 2.2.0 |
+| DB connector | mysql-connector-python 8.2.0 |
+| Database server | MySQL 8.0+ |
+| UI styling | Custom CSS (glassmorphism) |
 
 See `requirements.txt` for pinned versions.
 
