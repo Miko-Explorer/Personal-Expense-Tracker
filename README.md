@@ -237,9 +237,12 @@ Views marked with `user_id` are queried with a `LEFT JOIN` on `users` so the `us
 
 ## Development & testing
 
-- **Run locally:** ensure MySQL is running with `expense_db` created, then `streamlit run main.py`.
-- **Schema changes:** update `reports.py` (view names, display names, `user_id` set) if adding/altering views.
-- **Testing:** no suite included yet. Consider unit tests for `run_query()`, integration tests with a test DB, or `streamlit.testing` for UI tests.
+- **Run locally:** ensure MySQL is running with `expense_db` created, then `streamlit run main.py`
+- **Schema changes:** update `reports.py` (view names, display names, `user_id` set) if altering views
+- **Testing:** no test suite yet. Consider:
+  - Unit tests for `run_query()` with a mock connection
+  - Integration tests with a dedicated test DB
+  - `streamlit.testing` for UI tests
 
 ---
 
