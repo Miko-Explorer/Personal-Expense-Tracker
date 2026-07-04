@@ -156,13 +156,13 @@ Alternatively, open each file in MySQL Workbench or your preferred SQL client an
 
 #### `users` table
 
-| Column     | Type              | Constraints                        |
-|------------|-------------------|------------------------------------|
-| `id`       | `INT`             | `PRIMARY KEY`, `AUTO_INCREMENT`    |
-| `username` | `VARCHAR(100)`    | `NOT NULL`, `UNIQUE`               |
-| `email`    | `VARCHAR(255)`    | `NOT NULL`, `UNIQUE`               |
-| `passwords`| `VARCHAR(255)`    | `NOT NULL`                         |
-| `created_at`| `TIMESTAMP`      | `DEFAULT CURRENT_TIMESTAMP`        |
+| Column | Type | Constraints |
+|---|---|---|
+| `id` | `INT` | `PRIMARY KEY`, `AUTO_INCREMENT` |
+| `username` | `VARCHAR(100)` | `NOT NULL`, `UNIQUE` |
+| `email` | `VARCHAR(255)` | `NOT NULL`, `UNIQUE` |
+| `passwords` | `VARCHAR(255)` | `NOT NULL` |
+| `created_at` | `TIMESTAMP` | `DEFAULT CURRENT_TIMESTAMP` |
 
 ### `expenses` table
 
