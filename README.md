@@ -1,6 +1,7 @@
 # Personal Expense Tracker (PET)
 
-Personal Expense Tracker (PET) is a lightweight Streamlit application backed by MySQL that helps you track expenses per user, manage user accounts, and generate useful reporting views. It features a dark-themed glassmorphism UI and is built for quick data entry and simple analytics for personal finance tracking.
+- A Streamlit + MySQL app for tracking expenses, managing users, and generating reports. 
+- Features a dark glassmorphism UI for quick personal finance tracking.
 
 ---
 
