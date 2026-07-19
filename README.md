@@ -64,7 +64,8 @@ Personal Expense Tracker/
 │  ├─ ERD_expense_db.mwb           # MySQL Workbench model
 │  ├─ ERD_expense_db.pdf           # ERD diagram (PDF)
 │  ├─ expense_tracker_report (updated).sql  # 14 reporting views
-│  └─ personal_expense_tracker (updated).sql # DB + tables DDL
+│  ├─ personal_expense_tracker (updated).sql # DB + tables DDL
+│  └─ sample_expense_entries.sql   # 50 sample users + 50 sample expenses
 ├─ database.py                     # Cached DB connection + run_query()
 ├─ expenses.py                     # Expense CRUD
 ├─ main.py                         # App entry, CSS theme, routing
@@ -129,6 +130,12 @@ Personal Expense Tracker/
      mysql -u your_user -p expense_db < "Database & ERD/expense_tracker_report (updated).sql"
      ```
      Creates 14 views consumed by `reports.py`.
+
+  3. **(Optional) Insert sample data:**
+     ```bash
+     mysql -u your_user -p expense_db < "Database & ERD/sample_expense_entries.sql"
+     ```
+     Adds 50 sample users and 50 sample expenses for testing.
 
 - Alternatively, execute the SQL files in MySQL Workbench or any MySQL client.
 
@@ -244,4 +251,4 @@ Include your chosen license here (e.g., MIT).
 
 ## Contact
 
-Maintained by **Miko-Explorer** — open an issue on [GitHub](https://github.com/Miko-Explorer/MySQL-Based-Projects).
+Maintained by **Miko-Explorer** — open an issue on [GitHub]([https://github.com/Miko-Explorer/MySQL-Based-Projects](https://github.com/Miko-Explorer/Personal-Expense-Tracker)).
