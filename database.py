@@ -1,8 +1,11 @@
+# database.py
 import mysql.connector
 import streamlit as st
 import pandas as pd
 
+@st.cache_resource
 def get_db_connection():
+    """Return a MySQL connection, reconnecting if necessary."""
     try:
         conn = mysql.connector.connect(
             host=st.secrets["mysql"]["host"],
@@ -11,6 +14,7 @@ def get_db_connection():
             database=st.secrets["mysql"]["database"],
             port=st.secrets["mysql"].get("port", 3306)
         )
+        # Check if connection is alive
         if conn.is_connected():
             return conn
         else:
@@ -24,8 +28,13 @@ def get_db_connection():
         return None
 
 def run_query(query, params=None, fetch=True):
+    """
+    Execute a query and return results as a pandas DataFrame (if fetch).
+    For INSERT/UPDATE/DELETE, returns the number of affected rows.
+    """
     conn = get_db_connection()
     if conn is None:
+        # Clear message for the user
         st.warning("Cannot connect to database. Please check your settings and try again.")
         return None if fetch else 0
 
@@ -46,3 +55,5 @@ def run_query(query, params=None, fetch=True):
     finally:
         if cursor:
             cursor.close()
+        # Do NOT close the connection here – we want to reuse it.
+        # Streamlit will close it when the session ends.
