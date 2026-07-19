@@ -251,4 +251,4 @@ Include your chosen license here (e.g., MIT).
 
 ## Contact
 
-Maintained by **Miko-Explorer** — open an issue on [GitHub]([https://github.com/Miko-Explorer/MySQL-Based-Projects](https://github.com/Miko-Explorer/Personal-Expense-Tracker)).
+Maintained by **Miko-Explorer** — open an issue on [GitHub](https://github.com/Miko-Explorer/MySQL-Based-Projects](https://github.com/Miko-Explorer/Personal-Expense-Tracker)).
